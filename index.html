@@ -112,6 +112,8 @@
     border-radius:20px; padding:34px; text-align:center}
   .price{font-family:var(--disp); font-weight:900; color:var(--magenta); font-size:clamp(44px,7vw,66px); line-height:1}
   .price span{font-size:22px; color:var(--mut); font-weight:700}
+  .offer-note{color:var(--mut); font-size:15px; margin-top:10px}
+  .offer-why{color:var(--mut); font-size:14px; margin:10px auto 0; max-width:52ch}
   .offer-feats{display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin:24px 0 28px}
   .feat{font-family:var(--disp); font-weight:700; text-transform:uppercase; letter-spacing:.03em; font-size:15px;
     background:var(--off-white); border:1px solid var(--line); color:var(--purple); padding:10px 16px; border-radius:50px}
@@ -199,7 +201,7 @@
     </div>
     <div class="hero-meta">
       <span>🏅 <b>Aur</b> olimpic</span>
-      <span>👥 Grupe restrânse</span>
+      <span>👥 Grupe de max. <b>6 elevi</b></span>
       <span>💻 Fizic sau online</span>
       <span>💸 <b>150 lei</b> / 2 ore</span>
     </div>
@@ -293,8 +295,11 @@
     <div class="offer-box">
       <div class="price">150 lei <span>/ ședință</span></div>
       <p style="color:var(--mut); margin-top:6px">O ședință = <b>2 ore</b> de pregătire concentrată.</p>
+      <p class="offer-note">Plătești per ședință — fără abonament, poți opri oricând.</p>
+      <p class="offer-why">De ce 150 lei: pregătire cu un fost olimpic medaliat cu aur, care a dus 150+ elevi la rezultate — grupă mică, atenție reală.</p>
       <div class="offer-feats">
-        <span class="feat">👥 Grupe restrânse</span>
+        <span class="feat">👥 Max. 6 elevi/grupă</span>
+        <!-- TODO(owner): confirmă numărul max/grupă -->
         <span class="feat">💻 Fizic sau online</span>
         <span class="feat">📐 Nivel M1 &amp; M2</span>
         <span class="feat">⏱️ 2 ore / ședință</span>
@@ -338,7 +343,7 @@
       <details open><summary>Cât costă?</summary><p>150 lei pentru o ședință de 2 ore. Fără costuri ascunse.</p></details>
       <details><summary>Se face online sau fizic?</summary><p>Ambele — alegi formatul care ți se potrivește: fizic sau online.</p></details>
       <details><summary>Ce nivel se predă?</summary><p>Atât M1, cât și M2 — pregătire dedicată pentru fiecare tip de BAC.</p></details>
-      <details><summary>Cât de mari sunt grupele?</summary><p>Grupe restrânse, ca fiecare elev să primească atenție reală și să-și lămurească întrebările.</p></details>
+      <details><summary>Cât de mari sunt grupele?</summary><p>Grupe de maximum 6 elevi, ca fiecare să primească atenție reală.</p></details>
       <details><summary>Cine predă?</summary><p>Un fost olimpic medaliat cu aur la matematică, care a ghidat peste 150 de elevi spre rezultate excepționale.</p></details>
     </div>
   </div>
