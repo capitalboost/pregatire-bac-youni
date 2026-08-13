@@ -63,6 +63,8 @@
     font-size:16px; cursor:pointer; border:none; transition:all .2s}
   .btn-wa{background:var(--wa); color:#fff; box-shadow:0 6px 22px rgba(37,211,102,.35)}
   .btn-wa:hover{background:var(--wa-d); transform:translateY(-2px); box-shadow:0 10px 30px rgba(37,211,102,.45)}
+  .btn-mg{background:var(--mg); color:#fff; box-shadow:0 6px 22px rgba(216,15,108,.32)}
+  .btn-mg:hover{background:var(--mg-d); transform:translateY(-2px); box-shadow:0 10px 30px rgba(216,15,108,.42)}
   .btn-wh{background:rgba(255,255,255,.12); color:#fff; border:1.5px solid rgba(255,255,255,.32)}
   .btn-wh:hover{background:rgba(255,255,255,.2); border-color:rgba(255,255,255,.7)}
   .btn-ghost{background:transparent; color:var(--pu); border:1.5px solid var(--line)}
@@ -120,7 +122,7 @@
 
   /* ─── PROOF STRIP ─── */
   .proof{background:var(--mg-d); color:#fff; padding:42px 0}
-  .proof-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:24px; text-align:center}
+  .proof-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px; text-align:center}
   .proof .n{font-family:'Barlow Condensed',sans-serif; font-weight:900; font-size:clamp(34px,4vw,50px); color:#fff; line-height:1}
   .proof .l{font-size:12px; letter-spacing:.5px; color:rgba(255,255,255,.8); margin-top:6px; text-transform:uppercase; font-weight:500}
   @media(max-width:640px){ .proof-grid{grid-template-columns:repeat(2,1fr); gap:30px 16px} }
@@ -285,7 +287,6 @@
         <a class="btn btn-txt" href="https://academy.younichoice.com" target="_blank" rel="noopener">Youni Academy →</a>
       </div>
       <div class="chips">
-        <span class="chip go"><span class="dot"></span>Aur olimpic</span>
         <span class="chip"><span class="dot"></span>Grupe de max. 6 elevi</span>
         <span class="chip"><span class="dot"></span>Fizic sau online</span>
         <span class="chip"><span class="dot"></span>150 lei / 2 ore</span>
@@ -295,10 +296,9 @@
       <div class="hv-card">
         <div class="hv-medal">🏅</div>
         <div class="k">Profesor olimpic</div>
-        <div class="big">150+</div>
+        <div class="big">450+</div>
         <div class="lbl">elevi duși la rezultate excepționale</div>
       </div>
-      <span class="hv-badge mg">Aur olimpic</span>
       <span class="hv-badge go">M1 · M2</span>
     </div>
   </div>
@@ -309,8 +309,7 @@
   <div class="wrap">
     <div class="proof-grid">
       <div><div class="n">6.000+</div><div class="l">Elevi pregătiți prin Youni</div></div>
-      <div><div class="n">150+</div><div class="l">Elevi ghidați spre performanță</div></div>
-      <div><div class="n">Aur</div><div class="l">Medalie olimpică la matematică</div></div>
+      <div><div class="n">450+</div><div class="l">Elevi ghidați spre performanță</div></div>
       <div><div class="n">M1 · M2</div><div class="l">Ambele niveluri de BAC</div></div>
     </div>
   </div>
@@ -324,7 +323,7 @@
     <div class="grid-3" style="text-align:left">
       <div class="card"><div class="ic">🎯</div><h3>Exact ce cere BAC-ul</h3><p>Focus pe M1 și M2 — subiectele, tipurile de probleme și strategia de examen, nu teorie inutilă.</p></div>
       <div class="card"><div class="ic">👥</div><h3>Grupe mici</h3><p>Maximum 6 elevi în grupă = atenție reală pentru fiecare, întrebări lămurite pe loc, ritm potrivit.</p></div>
-      <div class="card"><div class="ic">🏅</div><h3>Predat de un olimpic</h3><p>Un fost olimpic medaliat cu aur, care a dus deja 150+ elevi la rezultate excepționale.</p></div>
+      <div class="card"><div class="ic">🏅</div><h3>Predat de un olimpic</h3><p>Un fost olimpic medaliat cu aur, care a dus deja 450+ elevi la rezultate excepționale.</p></div>
     </div>
   </div>
 </section>
@@ -346,7 +345,7 @@
         <p class="prof-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla. <!-- TODO(owner): înlocuiește cu bio reală --></p>
         <ul class="prof-list">
           <li><span class="chk">✓</span> Medaliat cu <b>aur</b> la olimpiada de matematică.</li>
-          <li><span class="chk">✓</span> A ghidat <b>peste 150 de elevi</b> către rezultate excepționale la olimpiade.</li>
+          <li><span class="chk">✓</span> A ghidat <b>peste 450 de elevi</b> către rezultate excepționale la olimpiade.</li>
           <li><span class="chk">✓</span> Specializat pe lucrul cu grupe de matematică de nivel <b>M1 și M2</b>.</li>
           <li><span class="chk">✓</span> Predare aplicată: înțelegi mecanismul, nu memorezi rețete.</li>
         </ul>
@@ -376,9 +375,9 @@
     <h2 class="stitle">Simplu, clar, fără costuri ascunse</h2>
     <div class="offer">
       <div class="price">150 lei <span>/ ședință</span></div>
-      <p class="dur">O ședință = <b>2 ore</b> de pregătire concentrată.</p>
-      <div class="offer-note">✓ Plătești per ședință — fără abonament</div>
-      <p class="offer-why">De ce 150 lei: pregătire cu un fost olimpic medaliat cu aur, care a dus 150+ elevi la rezultate — grupă mică, atenție reală.</p>
+      <p class="dur">O ședință = <b>2 ore</b> de pregătire · <b>1 credit</b> pe Youni Academy.</p>
+      <div class="offer-note">✓ Plătești per credit — fără abonament</div>
+      <p class="offer-why">De ce 150 lei: pregătire cu un fost olimpic medaliat cu aur, care a dus 450+ elevi la rezultate — grupă mică, atenție reală.</p>
       <div class="offer-feats">
         <span class="feat">👥 Max. 6 elevi/grupă</span><!-- TODO(owner): confirmă numărul max/grupă -->
         <span class="feat">💻 Fizic sau online</span>
@@ -393,15 +392,20 @@
   </div>
 </section>
 
-<!-- CUM ÎNCEPI -->
+<!-- CUM FUNCȚIONEAZĂ ACADEMY -->
 <section class="sec s-of" id="cum-incepi">
   <div class="wrap center">
-    <div class="eye">Simplu de tot</div>
-    <h2 class="stitle">Cum începi în 3 pași</h2>
+    <div class="eye">Cum funcționează</div>
+    <h2 class="stitle">Totul se întâmplă pe Youni Academy</h2>
+    <p class="ssub">Îți gestionezi pregătirea dintr-un singur loc — cont, credite și calendar.</p>
     <div class="steps" style="text-align:left">
-      <div class="step"><h3>Scrie-ne pe WhatsApp</h3><p>Un mesaj scurt — spui că vrei pregătire la BAC Matematică. Îți răspundem rapid.</p></div>
-      <div class="step"><h3>Stabilim nivelul &amp; formatul</h3><p>M1 sau M2, fizic sau online, și grupa potrivită pentru tine.</p></div>
-      <div class="step"><h3>Intri în grupă și începi</h3><p>Prima ședință de 2 ore și pornești pregătirea care chiar aduce rezultate.</p></div>
+      <div class="step"><h3>Îți faci cont</h3><p>Creezi contul tău de elev pe Youni Academy — rapid, în câțiva pași.</p></div>
+      <div class="step"><h3>Cumperi credite</h3><p>Din secțiunea Magazin. <b style="color:var(--pu)">1 credit = o ședință de pregătire de 2 ore.</b> Poți lua și pachete de credite.</p></div>
+      <div class="step"><h3>Alegi din Calendar</h3><p>Vezi când au loc ședințele și dacă sunt <b style="color:var(--pu)">fizic sau online</b> — și te înscrii cu un credit.</p></div>
+    </div>
+    <div style="margin-top:38px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap">
+      <a class="btn btn-mg btn-lg" href="https://academy.younichoice.com" target="_blank" rel="noopener">Intră pe Youni Academy →</a>
+      <a class="btn btn-ghost" href="https://wa.me/40774051652?text=Bun%C4%83!%20Am%20o%20%C3%AEntrebare%20despre%20preg%C4%83tirea%20la%20BAC%20Matematic%C4%83." target="_blank" rel="noopener">Ai întrebări? Scrie-ne</a>
     </div>
   </div>
 </section>
@@ -432,7 +436,7 @@
       <details><summary>Se face online sau fizic?</summary><p>Ambele — alegi formatul care ți se potrivește: fizic sau online.</p></details>
       <details><summary>Ce nivel se predă?</summary><p>Atât M1, cât și M2 — pregătire dedicată pentru fiecare tip de BAC.</p></details>
       <details><summary>Cât de mari sunt grupele?</summary><p>Grupe de maximum 6 elevi, ca fiecare să primească atenție reală.</p></details>
-      <details><summary>Cine predă?</summary><p>Andrei Cocalea — un fost olimpic medaliat cu aur la matematică, care a ghidat peste 150 de elevi spre rezultate excepționale.</p></details>
+      <details><summary>Cine predă?</summary><p>Andrei Cocalea — un fost olimpic medaliat cu aur la matematică, care a ghidat peste 450 de elevi spre rezultate excepționale.</p></details>
     </div>
   </div>
 </section>
