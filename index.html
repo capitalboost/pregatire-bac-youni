@@ -4,12 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Youni — Pregătire BAC Matematică (M1 & M2)</title>
-<meta name="description" content="Pregătire pentru BAC-ul de Matematică (M1 și M2) cu un fost olimpic medaliat cu aur. Grupe de maximum 6 elevi, fizic sau online. 150 lei / ședință de 2 ore.">
+<meta name="description" content="Pregătire pentru BAC-ul de Matematică (M1 și M2) cu un fost olimpic medaliat cu aur. Grupe de maximum 5 elevi, fizic sau online. 150 lei / ședință de 2 ore.">
 
+<meta name="keywords" content="pregătire BAC matematică, meditații matematică BAC, BAC M1 M2, meditații mate online, Youni">
+<meta name="theme-color" content="#4f235f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%234f235f'/%3E%3Ctext x='16' y='24' font-family='Arial,sans-serif' font-size='22' font-weight='900' fill='%23e40072' text-anchor='middle'%3EY%3C/text%3E%3C/svg%3E">
+
+<!-- Open Graph / social -->
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Youni">
+<meta property="og:locale" content="ro_RO">
 <meta property="og:title" content="Youni — Pregătire BAC Matematică (M1 & M2)">
-<meta property="og:description" content="Predat de un fost olimpic cu aur. Grupe mici, fizic sau online. 150 lei / 2 ore.">
-<!-- TODO(deploy): og:url + og:image după domeniu + imagine -->
+<meta property="og:description" content="Predat de un fost olimpic cu aur. Grupe de max. 5 elevi, fizic sau online. 150 lei / 2 ore.">
+<meta property="og:image" content="og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Youni — Pregătire BAC Matematică (M1 & M2)">
+<meta name="twitter:description" content="Predat de un fost olimpic cu aur. Grupe de max. 5 elevi, fizic sau online.">
+<meta name="twitter:image" content="og-image.png">
+<!-- TODO(deploy): fă og:url + og:image + twitter:image absolute (https://DOMENIU/og-image.png) după ce se stabilește domeniul -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +30,7 @@
 <style>
   /* ─── RESET ─── */
   *,*::before,*::after{box-sizing:border-box; margin:0; padding:0}
-  html{scroll-behavior:smooth; scroll-padding-top:76px}
+  html{scroll-behavior:smooth; scroll-padding-top:76px; overflow-x:hidden}
   body{font-family:'Inter',sans-serif; font-weight:300; color:#3d2450; background:#fff;
     line-height:1.6; overflow-x:hidden; -webkit-font-smoothing:antialiased}
   img{display:block; max-width:100%}
@@ -116,9 +128,15 @@
   .hv-badge.mg{background:var(--mg); color:#fff; top:14px; right:-14px}
   .hv-badge.go{background:var(--go); color:var(--pu-d); bottom:-14px; left:-14px}
   @media(max-width:860px){
-    .hero-in{grid-template-columns:1fr; gap:44px; padding:56px 24px 68px}
-    .hero-visual{order:-1; max-width:360px; margin:0 auto}
+    .hero-in{grid-template-columns:minmax(0,1fr); gap:44px; padding:56px 24px 68px}
+    .hero-copy{min-width:0}
+    .hero-visual{order:-1; max-width:300px; margin:0 auto}
+    .hv-badge.mg{right:-8px} .hv-badge.go{left:-8px}
+    .hero h1{max-width:none}
   }
+  /* overflow hardening */
+  .btn{max-width:100%}
+  h1,h2,.stitle,.hero-sub,.ssub{overflow-wrap:break-word}
 
   /* ─── PROOF STRIP ─── */
   .proof{background:var(--mg-d); color:#fff; padding:42px 0}
@@ -282,12 +300,11 @@
           <svg class="wa-ico" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 3C9 3 3.5 8.5 3.5 15.5c0 2.3.6 4.4 1.7 6.3L3 29l7.4-2.1c1.8 1 3.9 1.5 6 1.5 7 0 12.5-5.5 12.5-12.5S23 3 16 3zm0 22.7c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.4 1.2 1.2-4.3-.2-.4c-1-1.6-1.6-3.5-1.6-5.5C5.5 9.9 10.2 5.2 16 5.2s10.5 4.7 10.5 10.3S21.8 25.7 16 25.7zm6-7.7c-.3-.2-1.9-1-2.2-1-.3-.1-.5-.2-.7.2s-.8 1-1 1.2c-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.4-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.1 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.2-.6-.4z"/></svg>
           Scrie-ne pe WhatsApp
         </a>
-        <!-- TODO(owner): confirmă dacă apelurile merg pe același număr -->
         <a class="btn btn-wh" href="tel:+40774051652">📞 Sună-ne</a>
         <a class="btn btn-txt" href="https://academy.younichoice.com" target="_blank" rel="noopener">Youni Academy →</a>
       </div>
       <div class="chips">
-        <span class="chip"><span class="dot"></span>Grupe de max. 6 elevi</span>
+        <span class="chip"><span class="dot"></span>Grupe de max. 5 elevi</span>
         <span class="chip"><span class="dot"></span>Fizic sau online</span>
         <span class="chip"><span class="dot"></span>150 lei / 2 ore</span>
       </div>
@@ -322,7 +339,7 @@
     <h2 class="stitle">Pregătire făcută pentru rezultat, nu pentru bifă</h2>
     <div class="grid-3" style="text-align:left">
       <div class="card"><div class="ic">🎯</div><h3>Exact ce cere BAC-ul</h3><p>Focus pe M1 și M2 — subiectele, tipurile de probleme și strategia de examen, nu teorie inutilă.</p></div>
-      <div class="card"><div class="ic">👥</div><h3>Grupe mici</h3><p>Maximum 6 elevi în grupă = atenție reală pentru fiecare, întrebări lămurite pe loc, ritm potrivit.</p></div>
+      <div class="card"><div class="ic">👥</div><h3>Grupe mici</h3><p>Maximum 5 elevi în grupă = atenție reală pentru fiecare, întrebări lămurite pe loc, ritm potrivit.</p></div>
       <div class="card"><div class="ic">🏅</div><h3>Predat de un olimpic</h3><p>Un fost olimpic medaliat cu aur, care a dus deja 450+ elevi la rezultate excepționale.</p></div>
     </div>
   </div>
@@ -379,7 +396,7 @@
       <div class="offer-note">✓ Plătești per credit — fără abonament</div>
       <p class="offer-why">De ce 150 lei: pregătire cu un fost olimpic medaliat cu aur, care a dus 450+ elevi la rezultate — grupă mică, atenție reală.</p>
       <div class="offer-feats">
-        <span class="feat">👥 Max. 6 elevi/grupă</span><!-- TODO(owner): confirmă numărul max/grupă -->
+        <span class="feat">👥 Max. 5 elevi/grupă</span>
         <span class="feat">💻 Fizic sau online</span>
         <span class="feat">📐 Nivel M1 &amp; M2</span>
         <span class="feat">⏱️ 2 ore / ședință</span>
@@ -435,7 +452,7 @@
       <details open><summary>Cât costă?</summary><p>150 lei pentru o ședință de 2 ore. Plătești per ședință, fără abonament — fără costuri ascunse.</p></details>
       <details><summary>Se face online sau fizic?</summary><p>Ambele — alegi formatul care ți se potrivește: fizic sau online.</p></details>
       <details><summary>Ce nivel se predă?</summary><p>Atât M1, cât și M2 — pregătire dedicată pentru fiecare tip de BAC.</p></details>
-      <details><summary>Cât de mari sunt grupele?</summary><p>Grupe de maximum 6 elevi, ca fiecare să primească atenție reală.</p></details>
+      <details><summary>Cât de mari sunt grupele?</summary><p>Grupe de maximum 5 elevi, ca fiecare să primească atenție reală.</p></details>
       <details><summary>Cine predă?</summary><p>Andrei Cocalea — un fost olimpic medaliat cu aur la matematică, care a ghidat peste 450 de elevi spre rezultate excepționale.</p></details>
     </div>
   </div>
