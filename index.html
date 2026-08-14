@@ -191,6 +191,13 @@
   .prof-list li{display:flex; gap:12px; align-items:flex-start; font-size:15px; color:rgba(255,255,255,.9)}
   .prof-list .chk{color:var(--go); font-weight:900; flex:none}
   .prof-list b{color:#fff; font-weight:600}
+  .prof-quote{max-width:840px; margin:46px auto 0; text-align:center; padding:0 16px}
+  .prof-quote .mark{color:var(--go); font-family:'Barlow Condensed',sans-serif; font-weight:900; font-size:58px; line-height:.4; display:block}
+  .prof-quote blockquote{font-family:'Inter',sans-serif; font-style:italic; font-weight:300;
+    font-size:clamp(21px,2.9vw,30px); line-height:1.4; color:#fff; margin-top:6px}
+  .prof-quote blockquote b{font-weight:600; font-style:normal; color:#fff}
+  .prof-quote figcaption{margin-top:18px; font-family:'Barlow Condensed',sans-serif; font-weight:700;
+    letter-spacing:2px; text-transform:uppercase; color:var(--go); font-size:15px}
   @media(max-width:768px){ .prof-card{grid-template-columns:1fr} .prof-photo{min-height:240px} .prof-body{padding:30px 28px} }
 
   /* ─── OFERTA ─── */
@@ -359,16 +366,21 @@
       </div>
       <div class="prof-body">
         <h3>Andrei Cocalea</h3>
-        <div class="prof-tag">Fost olimpic · specializat pe grupe M1 &amp; M2</div>
-        <p class="prof-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla. <!-- TODO(owner): înlocuiește cu bio reală --></p>
+        <div class="prof-tag">Profesor de matematică · fost olimpic · M1 &amp; M2</div>
+        <p class="prof-bio">Predă matematică din 2018, cu debutul la Mark Twain International School. A crescut la Constanța, într-o familie de dascăli, și a intrat de tânăr în lumea olimpiadelor de matematică. Și-a făcut licența în geometrie diferențială — atras de eleganța și de aplicațiile ei în teoria relativității.</p>
         <ul class="prof-list">
-          <li><span class="chk">✓</span> Medaliat cu <b>aur</b> la olimpiada de matematică.</li>
-          <li><span class="chk">✓</span> A ghidat <b>peste 450 de elevi</b> către rezultate excepționale la olimpiade.</li>
-          <li><span class="chk">✓</span> Specializat pe lucrul cu grupe de matematică de nivel <b>M1 și M2</b>.</li>
-          <li><span class="chk">✓</span> Predare aplicată: înțelegi mecanismul, nu memorezi rețete.</li>
+          <li><span class="chk">✓</span> Predă matematică <b>din 2018</b>, cu debutul la <b>Mark Twain International School</b>.</li>
+          <li><span class="chk">✓</span> <b>Fost olimpic</b> la matematică — calificat la olimpiada națională.</li>
+          <li><span class="chk">✓</span> Licență în <b>geometrie diferențială</b>.</li>
+          <li><span class="chk">✓</span> Specializat pe grupe de nivel <b>M1 și M2</b> — predare aplicată, înțelegi mecanismul, nu memorezi rețete.</li>
         </ul>
       </div>
     </div>
+    <figure class="prof-quote">
+      <span class="mark" aria-hidden="true">&ldquo;</span>
+      <blockquote>Nu e nevoie de un talent înnăscut ca să înțelegi matematica. E nevoie de <b>interes autentic, curiozitate și un minim de disciplină.</b></blockquote>
+      <figcaption>— Andrei Cocalea</figcaption>
+    </figure>
   </div>
 </section>
 
